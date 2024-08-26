@@ -1,0 +1,20 @@
+{
+  "name": "@vernal-projects/framework-web",
+  "version": "0.3.0",
+  "description": "Vernal Framework - Web",
+  "main": "index.js",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vernal-projects/vernal-web.git"
+  },
+  "author": "D M R Suranga <d.m.ranjith.sura@gmail.com>",
+  "license": "Copyright (c) 2024 - D M R Suranga. All Rights Reserved",
+  "dependencies": {
+    "@vernal-projects/framework-core": "^0.2.0",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21"
+  }
+}

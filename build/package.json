@@ -1,6 +1,6 @@
 {
   "name": "@vernal-projects/framework-web",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Vernal Framework - Web",
   "main": "index.js",
   "type": "module",
@@ -12,9 +12,7 @@
   "license": "Copyright (c) 2024 - D M R Suranga. All Rights Reserved",
   "dependencies": {
     "@vernal-projects/framework-core": "^0.3.0",
-    "express": "^4.19.2"
-  },
-  "devDependencies": {
+    "express": "^4.19.2",
     "@types/express": "^4.17.21"
   }
 }

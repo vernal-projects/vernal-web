@@ -8,6 +8,7 @@ export class WebAppContext extends AppContext {
     constructor(private webApp: Express, configClass: ClassType) {
         super(configClass);
         Array.from(MAPPING_REGISTRY.keys()).forEach(controller => {
+            if (!this.containsComponentDefinition(controller)) return;
             if (COMPONENT_REGISTRY.get(controller)!.type !== StereotypeComponent.CONTROLLER)
                 throw new Error(`@RequestMapping decorator is not allowed with ${controller.name} class`);
             if (!MAPPING_REGISTRY.get(controller)!.filter(h => h.handler).length) {
